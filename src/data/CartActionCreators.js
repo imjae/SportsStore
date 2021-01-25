@@ -2,7 +2,7 @@ import { ActionTypes } from "./Types";
 
 // 액션 실행에 필요한 데이터를 운반하는 payload 프로퍼티
 
-export const addToCart = (Product, quantity) => ({
+export const addToCart = (product, quantity) => ({
   type: ActionTypes.CART_ADD,
   payload: {
     product,
@@ -10,7 +10,7 @@ export const addToCart = (Product, quantity) => ({
   },
 });
 
-export const upadateCartQuantity = (Product, quantiry) => ({
+export const updateCartQuantity = (product, quantity) => ({
   type: ActionTypes.CART_UPDATE,
   payload: {
     product,
@@ -18,13 +18,13 @@ export const upadateCartQuantity = (Product, quantiry) => ({
   },
 });
 
-export const removeFromCart = (Product) => ({
+export const removeFromCart = (product) => ({
   type: ActionTypes.CART_REMOVE,
   payload: {
     product,
   },
 });
 
-export const claerCart = () => ({
+export const clearCart = () => ({
   type: ActionTypes.CART_CLEAR,
 });
